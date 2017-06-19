@@ -104,6 +104,11 @@ exports.searchStores = async (req, res) => {
     $text: {
       $search: req.query.q,
     }
+  }, {
+    score: { $meta: 'textScore'}
+  })
+  .sort({
+    score: { $meta: 'textScore' }
   })
   res.json(stores)
 }
