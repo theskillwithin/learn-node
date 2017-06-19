@@ -107,8 +107,10 @@ exports.searchStores = async (req, res) => {
   }, {
     score: { $meta: 'textScore'}
   })
+  // the sort term
   .sort({
     score: { $meta: 'textScore' }
   })
+  .limit(5) // limit to only 5 results
   res.json(stores)
 }
