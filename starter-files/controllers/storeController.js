@@ -155,3 +155,8 @@ exports.heartStore = async (req, res) => {
   )
   res.json(user)
 }
+
+exports.getTopStores = async (req, res) => {
+  const stores = await Store.getTopStores()
+  res.render('topStores', { stores, title: 'Top Stores!' })
+}
