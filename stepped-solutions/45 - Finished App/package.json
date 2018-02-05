@@ -16,7 +16,7 @@
     "sample": "node ./data/load-sample-data.js",
     "blowitallaway": "node ./data/load-sample-data.js --delete"
   },
-  "browserslist": "last 2 versions",
+  "browserslist": "last 3 versions",
   "dependencies": {
     "axios": "^0.15.3",
     "body-parser": "^1.17.1",
@@ -54,7 +54,7 @@
     "autoprefixer": "^6.7.7",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.0",
-    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-env": "^1.6.0",
     "concurrently": "^3.4.0",
     "css-loader": "^0.27.3",
     "extract-text-webpack-plugin": "^2.1.0",
